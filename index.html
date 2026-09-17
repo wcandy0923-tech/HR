@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="zh-TW">
+ <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260916-23-2f47194","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YACgEZulLoA,0","Arial Narrow":"YAGyDvJ_4Ts,0","Arial Rounded MT Bold":"YAFcfoaHu-s,0","Arial":"YAGyDvJ_4Ts,0","Avenir Next":"YAFcfmNq6UY,0","Baloo 2":"YADK30bC6HQ,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAFcfvtOAUY,1","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHQutsX00Q,0","Hanken Grotesk":"YAFcfhwp99E,0","Helvetica Neue":"YAFcf6CtJfI,0","Helvetica":"YAFcf6CtJfI,0","IBM Plex Mono":"YAFdJkmvhGI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YADK3zbC6RM,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Pacifico":"YADLjORQ1u4,0","Phantom Sans":"YAFdJvgJ5TU,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAGvf3_u0_Q,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Source Serif 4":"YACgEfdj394,0","Space Grotesk":"YADZ-dYEmhg,0","Space Mono":"YADW1-vpsoc,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","UV Display":"YAEdVfSSpYo,0","UV Sans":"YAFdJvgJ5TU,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YAD1aFjegN8,0","ui-sans-serif":"YACkoD1yZN0,0"}}');</script><script src="/_sdk/83d6dfdadcd4750a.telemetry_sdk.js" integrity="sha512-XS4Dvzp6vbagZS9vFErihvr8aO3S0tH78KWUefn06fmL4WYqryBtZj/IOLITYj7dFA4gPVvPg1W/JB1DK3uLNQ=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 與人權小達人學習單</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+  <style>
+    :root { --ink: #3d342c; --paper: #fdfaf6; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Noto Sans TC", sans-serif; color: var(--ink); }
+    .worksheet-shell { width: 100%; }
+    .step-card { transition: transform .22s ease, border-color .22s ease, background .22s ease; }
+    .step-card:hover { transform: translateY(-2px); }
+    .expert-card { animation: reveal .28s ease both; }
+    .modal-panel { animation: pop .24s ease both; }
+    @keyframes reveal { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes pop { from { opacity: 0; transform: scale(.96); } to { opacity: 1; transform: scale(1); } }
+    input, textarea, select { font: inherit; }
+    button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+      outline: 3px solid rgba(245, 158, 11, .45);
+      outline-offset: 2px;
+    }
+  </style>
+  <script src="/_sdk/8de366929c5f3b48.data_sdk.js" type="text/javascript" integrity="sha512-TyQ8k8cZj66xe/aENmn6RyZpdOFZXbAo5+KBG3PeFM+Q4qMTHU8xAqmq4ADClNfPrstgQYV6OzZHwLTnElzB2g=="></script>
+  <script src="/_sdk/a558f474cd01d324.resizing_sdk.js" type="text/javascript" integrity="sha512-evIEjzvRDdaV6tHT4THeYa18+ppfgUj4Zpx5W8R1gaF2VKcOba7TPP4x2YYqsfThPwuC5NaBFyUH6V81c3i8kA=="></script>
+ </head>
+ <body data-template-id="__page-root" class="min-h-screen w-full p-3 sm:p-6 md:p-10">
+  <div class="worksheet-shell mx-auto w-full max-w-4xl overflow-hidden rounded-3xl border-2 border-amber-200 bg-white shadow-xl">
+   <header data-template-id="header-section" class="canva-header relative p-6 text-center text-white">
+    <p data-template-id="header-badge" class="canva-tag mb-2 inline-block rounded-full bg-amber-900/40 px-3 py-1 text-xs font-bold tracking-wider"></p>
+    <h1 data-template-id="page-title" class="canva-text mb-2 font-black tracking-tight"></h1>
+    <p data-template-id="page-subtitle" class="canva-text text-amber-100"></p>
+    <div class="mx-auto mt-4 flex max-w-xs items-center justify-center gap-2 rounded-2xl border border-white/20 bg-white/10 p-2 backdrop-blur-md"><span data-template-id="expert-toggle-label" class="canva-text text-xs font-bold text-amber-50"></span> <label class="relative inline-flex cursor-pointer items-center"> <input id="expert-mode-toggle" type="checkbox" class="peer sr-only" aria-label="開啟人權專家巡檢模式"> <span class="h-6 w-11 rounded-full bg-amber-800/50 transition peer-checked:bg-emerald-500 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all peer-checked:after:translate-x-full"></span> </label>
+    </div>
+   </header>
+   <main class="space-y-10 p-4 sm:p-8 md:p-10">
+    <section class="space-y-3" aria-labelledby="privacy-warning-title">
+     <div data-template-id="privacy-warning" class="canva-banner rounded-r-xl border-l-4 border-amber-500 p-4 shadow-sm">
+      <div class="flex items-start gap-3"><span aria-hidden="true" class="text-2xl">🔒</span>
+       <div>
+        <h2 id="privacy-warning-title" data-template-id="privacy-warning-title" class="canva-text text-sm font-bold sm:text-base"></h2>
+        <p data-template-id="privacy-warning-copy" class="canva-text mt-1 text-xs sm:text-sm"></p>
+       </div>
+      </div>
+     </div>
+     <div data-template-id="student-info-panel" class="canva-panel grid grid-cols-1 gap-4 rounded-2xl border border-orange-200 p-4 sm:grid-cols-3">
+      <div class="flex flex-col items-start sm:flex-row sm:items-center"><label data-template-id="grade-label" for="grade-year" class="canva-text mb-1 shrink-0 text-sm font-bold sm:mb-0 sm:mr-2"></label>
+       <div class="flex w-full items-center gap-1"><input id="grade-year" type="text" class="w-16 rounded-lg border border-amber-200 bg-white px-2 py-1 text-center text-sm" placeholder="四"> <span data-template-id="grade-year-suffix" class="canva-text text-sm font-bold"></span> <input id="grade-class" type="text" class="w-16 rounded-lg border border-amber-200 bg-white px-2 py-1 text-center text-sm" placeholder="1"> <span data-template-id="grade-class-suffix" class="canva-text text-sm font-bold"></span>
+       </div>
+      </div>
+      <div class="flex flex-col items-start sm:flex-row sm:items-center"><label data-template-id="student-label" for="user-name-input" class="canva-text mb-1 shrink-0 text-sm font-bold sm:mb-0 sm:mr-2"></label> <input id="user-name-input" type="text" class="w-full rounded-lg border border-amber-200 bg-white px-3 py-1.5 text-sm" placeholder="輸入名字或暱稱">
+      </div>
+      <div class="flex flex-col items-start sm:flex-row sm:items-center"><label data-template-id="date-label" for="date-input" class="canva-text mb-1 shrink-0 text-sm font-bold sm:mb-0 sm:mr-2"></label> <input id="date-input" type="date" class="w-full rounded-lg border border-amber-200 bg-white px-3 py-1.5 text-sm">
+      </div>
+     </div>
+    </section>
+    <section data-template-id="learning-note" class="canva-banner rounded-r-xl border-l-4 border-blue-500 p-4" aria-labelledby="learning-note-title">
+     <h2 id="learning-note-title" data-template-id="learning-note-title" class="canva-text mb-1 flex items-center font-bold"></h2>
+     <p data-template-id="learning-note-copy" class="canva-text text-xs sm:text-sm"></p>
+    </section>
+    <section class="space-y-4" aria-labelledby="section-one-title">
+     <div class="flex items-center"><span class="mr-3 flex h-9 w-9 items-center justify-center rounded-full bg-orange-500 text-lg font-black text-white shadow">1</span>
+      <h2 id="section-one-title" data-template-id="section-one-title" class="canva-text font-bold"></h2>
+     </div>
+     <p data-template-id="section-one-prompt" class="canva-text text-sm font-medium text-gray-700 sm:text-base"></p>
+     <div id="step-order" class="space-y-3"><button type="button" data-step="A" class="step-card flex w-full items-center justify-between rounded-2xl border-2 border-dashed border-gray-300 bg-white p-4 text-left shadow-sm hover:border-orange-400"> <span data-template-id="step-a-text" class="canva-text text-sm font-medium text-gray-800 sm:text-base"></span> <span class="order-badge flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-orange-100 text-sm font-bold text-orange-600">?</span> </button> <button type="button" data-step="B" class="step-card flex w-full items-center justify-between rounded-2xl border-2 border-dashed border-gray-300 bg-white p-4 text-left shadow-sm hover:border-orange-400"> <span data-template-id="step-b-text" class="canva-text text-sm font-medium text-gray-800 sm:text-base"></span> <span class="order-badge flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-orange-100 text-sm font-bold text-orange-600">?</span> </button> <button type="button" data-step="C" class="step-card flex w-full items-center justify-between rounded-2xl border-2 border-dashed border-gray-300 bg-white p-4 text-left shadow-sm hover:border-orange-400"> <span data-template-id="step-c-text" class="canva-text text-sm font-medium text-gray-800 sm:text-base"></span> <span class="order-badge flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-orange-100 text-sm font-bold text-orange-600">?</span> </button>
+     </div>
+     <div id="order-feedback" class="hidden rounded-xl p-3 text-sm font-bold" aria-live="polite"></div>
+     <aside data-template-id="expert-card-one" class="expert-card hidden rounded-2xl border border-purple-200 p-4 text-xs sm:text-sm">
+      <h3 data-template-id="expert-card-one-title" class="canva-text font-bold"></h3>
+      <p data-template-id="expert-card-one-copy" class="canva-text mt-1"></p>
+     </aside>
+    </section>
+    <section class="space-y-4" aria-labelledby="section-two-title">
+     <div class="flex items-center"><span class="mr-3 flex h-9 w-9 items-center justify-center rounded-full bg-blue-600 text-lg font-black text-white shadow">2</span>
+      <h2 id="section-two-title" data-template-id="section-two-title" class="canva-text font-bold"></h2>
+     </div>
+     <div data-template-id="verification-panel" class="canva-panel space-y-4 rounded-2xl border border-blue-200 p-5 shadow-sm">
+      <p data-template-id="verification-prompt" class="canva-text font-bold"></p>
+      <div class="grid grid-cols-1 gap-3 md:grid-cols-2"><label class="flex cursor-pointer items-center rounded-xl border border-gray-200 bg-white p-3 hover:bg-blue-50"> <input type="checkbox" name="verify" value="A" class="mr-3 h-5 w-5 accent-blue-600"> <span data-template-id="verify-a-label" class="canva-text text-sm text-gray-800"></span> </label> <label class="flex cursor-pointer items-center rounded-xl border border-gray-200 bg-white p-3 hover:bg-blue-50"> <input type="checkbox" name="verify" value="B" class="mr-3 h-5 w-5 accent-blue-600"> <span data-template-id="verify-b-label" class="canva-text text-sm text-gray-800"></span> </label> <label class="flex cursor-pointer items-center rounded-xl border border-gray-200 bg-white p-3 hover:bg-blue-50"> <input type="checkbox" name="verify" value="C" class="mr-3 h-5 w-5 accent-blue-600"> <span data-template-id="verify-c-label" class="canva-text text-sm text-gray-800"></span> </label> <label class="flex cursor-pointer items-center rounded-xl border border-gray-200 bg-white p-3 hover:bg-blue-50"> <input type="checkbox" name="verify" value="D" class="mr-3 h-5 w-5 accent-blue-600"> <span data-template-id="verify-d-label" class="canva-text text-sm text-gray-800"></span> </label>
+      </div><button id="verify-button" type="button" data-template-id="verify-button" class="canva-button rounded-xl px-6 py-2.5 text-sm font-bold shadow-md"></button>
+      <div id="verify-feedback" class="hidden rounded-xl p-4 text-sm font-medium" aria-live="polite"></div>
+     </div>
+     <div data-template-id="bias-warning" class="canva-banner rounded-r-xl border-l-4 border-rose-500 p-4 shadow-sm">
+      <div class="flex items-start gap-3"><span aria-hidden="true" class="text-2xl">⚠️</span>
+       <div>
+        <h3 data-template-id="bias-warning-title" class="canva-text text-sm font-bold sm:text-base"></h3>
+        <p data-template-id="bias-warning-copy" class="canva-text mt-1 text-xs sm:text-sm"></p>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="space-y-4" aria-labelledby="section-three-title">
+     <div class="flex items-center"><span class="mr-3 flex h-9 w-9 items-center justify-center rounded-full bg-purple-600 text-lg font-black text-white shadow">3</span>
+      <h2 id="section-three-title" data-template-id="section-three-title" class="canva-text font-bold"></h2>
+     </div>
+     <p data-template-id="matching-prompt" class="canva-text text-sm font-medium text-gray-700 sm:text-base"></p>
+     <div data-template-id="principles-panel" class="canva-panel space-y-1 rounded-2xl border border-purple-200 p-4 text-xs font-semibold sm:text-sm">
+      <p data-template-id="principles-heading" class="canva-text"></p>
+      <p data-template-id="principles-copy" class="canva-text"></p>
+     </div>
+     <div class="overflow-x-auto rounded-2xl border border-purple-200 bg-white shadow-sm">
+      <table class="w-full min-w-[620px] border-collapse text-left">
+       <thead data-template-id="matching-table-head" class="canva-table text-sm">
+        <tr>
+         <th data-template-id="matching-action-head" class="canva-text w-3/5 border-b border-purple-200 p-4"></th>
+         <th data-template-id="matching-principle-head" class="canva-text w-2/5 border-b border-purple-200 p-4"></th>
+        </tr>
+       </thead>
+       <tbody class="divide-y divide-purple-100 text-sm">
+        <tr>
+         <td data-template-id="match-one-text" class="canva-text p-4 font-medium text-gray-800"></td>
+         <td class="p-4"><label for="match-1" class="sr-only">第一題對應原則</label> <select id="match-1" class="w-full rounded-lg border border-gray-300 bg-white p-2 text-sm"> <option value="">請選擇對應原則...</option><option value="A">A. 要經過自己的思考完成作業</option><option value="B">B. 保持有禮貌的互動</option><option value="C">C. 不告訴 AI 自己的個人資料</option> </select></td>
+        </tr>
+        <tr>
+         <td data-template-id="match-two-text" class="canva-text p-4 font-medium text-gray-800"></td>
+         <td class="p-4"><label for="match-2" class="sr-only">第二題對應原則</label> <select id="match-2" class="w-full rounded-lg border border-gray-300 bg-white p-2 text-sm"> <option value="">請選擇對應原則...</option><option value="A">A. 要經過自己的思考完成作業</option><option value="B">B. 保持有禮貌的互動</option><option value="C">C. 不告訴 AI 自己的個人資料</option> </select></td>
+        </tr>
+        <tr>
+         <td data-template-id="match-three-text" class="canva-text p-4 font-medium text-gray-800"></td>
+         <td class="p-4"><label for="match-3" class="sr-only">第三題對應原則</label> <select id="match-3" class="w-full rounded-lg border border-gray-300 bg-white p-2 text-sm"> <option value="">請選擇對應原則...</option><option value="A">A. 要經過自己的思考完成作業</option><option value="B">B. 保持有禮貌的互動</option><option value="C">C. 不告訴 AI 自己的個人資料</option> </select></td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+     <aside data-template-id="expert-card-three" class="expert-card hidden rounded-2xl border border-purple-200 p-4 text-xs sm:text-sm">
+      <h3 data-template-id="expert-card-three-title" class="canva-text font-bold"></h3>
+      <p data-template-id="expert-card-three-copy" class="canva-text mt-1"></p>
+     </aside>
+    </section>
+    <section class="space-y-4" aria-labelledby="section-four-title">
+     <div class="flex items-center"><span class="mr-3 flex h-9 w-9 items-center justify-center rounded-full bg-emerald-600 text-lg font-black text-white shadow">4</span>
+      <h2 id="section-four-title" data-template-id="section-four-title" class="canva-text font-bold"></h2>
+     </div>
+     <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+      <div data-template-id="creative-panel" class="canva-panel space-y-3 rounded-2xl border border-emerald-200 p-5">
+       <p data-template-id="creative-prompt" class="canva-text font-bold"></p>
+       <div class="space-y-2 text-sm text-gray-800"><label class="flex cursor-pointer items-center gap-2"><input class="creative-choice h-4 w-4 accent-emerald-600" type="checkbox"><span data-template-id="creative-choice-one" class="canva-text"></span></label> <label class="flex cursor-pointer items-center gap-2"><input class="creative-choice h-4 w-4 accent-emerald-600" type="checkbox"><span data-template-id="creative-choice-two" class="canva-text"></span></label> <label class="flex cursor-pointer items-center gap-2"><input class="creative-choice h-4 w-4 accent-emerald-600" type="checkbox"><span data-template-id="creative-choice-three" class="canva-text"></span></label>
+       </div>
+       <div class="pt-2"><label data-template-id="other-idea-label" for="other-idea" class="canva-text mb-1 block text-xs font-bold"></label> <textarea id="other-idea" rows="2" class="w-full rounded-xl border border-emerald-300 bg-white p-3 text-sm" placeholder="請寫下你超酷又溫暖的 AI 好想法..."></textarea>
+       </div>
+      </div>
+      <div data-template-id="progress-panel" class="canva-panel flex flex-col items-center justify-center rounded-2xl border border-emerald-200 p-6 text-center">
+       <p data-template-id="progress-title" class="canva-text mb-3 font-bold"></p>
+       <div class="w-full overflow-hidden rounded-full border border-emerald-300 bg-white p-0.5 shadow-inner">
+        <div id="progress-bar" class="h-5 w-0 rounded-full bg-emerald-500 transition-all duration-500"></div>
+       </div>
+       <p id="progress-text" class="mt-2 text-sm font-bold text-emerald-800" aria-live="polite">目前進度：0%</p>
+      </div>
+     </div>
+    </section>
+    <section class="space-y-6 border-t pt-8 text-center" aria-labelledby="pledge-title">
+     <div data-template-id="pledge-panel" class="canva-panel mx-auto max-w-2xl space-y-4 rounded-3xl border-2 border-rose-200 p-6 shadow-sm sm:p-8">
+      <h2 id="pledge-title" data-template-id="pledge-title" class="canva-text font-bold"></h2>
+      <p data-template-id="pledge-copy" class="canva-text px-2 text-sm italic leading-relaxed text-gray-700 sm:text-base"></p>
+      <div class="flex items-center justify-center gap-2 pt-2"><label data-template-id="signature-label" for="signature-input" class="canva-text text-sm font-bold text-gray-800 sm:text-base"></label> <input id="signature-input" type="text" class="w-40 border-b-2 border-rose-400 bg-transparent px-3 py-1 text-center text-lg font-bold text-rose-900 outline-none" placeholder="請輸入簽名">
+      </div>
+     </div><button id="finish-button" type="button" data-template-id="finish-button" class="canva-button rounded-full px-8 py-4 text-base font-bold shadow-xl transition hover:scale-105 active:scale-95 sm:px-10 sm:text-lg"></button>
+    </section>
+   </main>
+  </div>
+  <div id="custom-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 p-4 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+   <div class="modal-panel w-full max-w-md rounded-3xl border border-amber-200 bg-white p-6 text-center shadow-2xl">
+    <div id="modal-icon" class="mb-3 text-5xl" aria-hidden="true">
+     💡
+    </div>
+    <h2 id="modal-title" class="mb-2 text-xl font-bold text-gray-900"></h2>
+    <p id="modal-message" class="mb-6 whitespace-pre-line text-sm leading-relaxed text-gray-600"></p><button id="modal-close-button" type="button" data-template-id="modal-close-button" class="canva-button w-full rounded-xl py-3 font-bold"></button>
+   </div>
+  </div>
+  <div id="success-overlay" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 p-4 backdrop-blur-md" role="dialog" aria-modal="true" aria-labelledby="certificate-title">
+   <div data-template-id="certificate-panel" class="canva-panel relative w-full max-w-lg overflow-hidden rounded-3xl border-4 border-amber-400 bg-white p-6 text-center shadow-2xl sm:p-10">
+    <p data-template-id="certificate-ribbon" class="canva-banner absolute left-0 top-0 w-full py-1 text-xs font-black tracking-widest"></p>
+    <div class="mt-4 text-6xl" aria-hidden="true">
+     🏆
+    </div>
+    <h2 id="certificate-title" data-template-id="certificate-title" class="canva-text mt-2 font-black"></h2>
+    <p data-template-id="certificate-subtitle" class="canva-text mt-1 text-xs text-gray-500"></p>
+    <div data-template-id="certificate-copy-panel" class="canva-panel my-6 space-y-2 rounded-2xl border border-amber-200 p-4 text-left">
+     <p data-template-id="certificate-intro" class="canva-text text-sm text-gray-700"></p>
+     <p id="cert-name" class="text-center text-xl font-black text-amber-900 underline">小達人</p>
+     <p data-template-id="certificate-copy" class="canva-text text-xs leading-relaxed text-gray-600"></p>
+     <p id="cert-date" class="pt-2 text-right text-xs font-bold text-amber-800"></p>
+    </div><button id="certificate-close-button" type="button" data-template-id="certificate-close-button" class="canva-button w-full rounded-xl py-3 font-bold shadow-lg"></button>
+   </div>
+  </div>
+  <script src="/_sdk/2d77f6da28d2db67.editing_sdk.js" integrity="sha512-J2amlRCt1kRxG+KsIIrigl/2D8tdwu2dYL445oeyjdtw4o+kHc2ulDQY9K62zncyUGQOQtw3RmPXZJwLF2WCRQ=="></script>
+  <script>
+    const currentOrder = [];
+    const correctOrder = ["B", "C", "A"];
+
+    function showModal(title, message, icon) {
+      document.getElementById("modal-title").textContent = title;
+      document.getElementById("modal-message").textContent = message;
+      document.getElementById("modal-icon").textContent = icon || "💡";
+      document.getElementById("custom-modal").classList.remove("hidden");
+      document.getElementById("custom-modal").classList.add("flex");
+    }
+
+    function closeModal() {
+      document.getElementById("custom-modal").classList.add("hidden");
+      document.getElementById("custom-modal").classList.remove("flex");
+    }
+
+    function updateOrderCards() {
+      document.querySelectorAll("[data-step]").forEach((button) => {
+        const index = currentOrder.indexOf(button.dataset.step);
+        const selected = index !== -1;
+        button.classList.toggle("bg-orange-100", selected);
+        button.classList.toggle("border-orange-500", selected);
+        button.querySelector(".order-badge").textContent = selected ? index + 1 : "?";
+      });
+
+      const feedback = document.getElementById("order-feedback");
+      if (currentOrder.length !== 3) {
+        feedback.classList.add("hidden");
+        return;
+      }
+
+      const isCorrect = JSON.stringify(currentOrder) === JSON.stringify(correctOrder);
+      feedback.classList.remove("hidden");
+      feedback.textContent = isCorrect
+        ? "✅ 太棒了！正確順序是：先自己想一想，再請 AI 幫忙，最後反思自己有沒有真正學會！"
+        : "💡 提示：最佳順序是先獨立思考、卡關時請 AI 幫忙，最後再檢查自己是否真的學會。點選已選步驟可取消後重試。";
+      feedback.className = isCorrect
+        ? "rounded-xl border border-emerald-300 bg-emerald-100 p-3 text-sm font-bold text-emerald-900"
+        : "rounded-xl border border-amber-300 bg-amber-100 p-3 text-sm font-bold text-amber-900";
+    }
+
+    function checkVerification() {
+      const checked = Array.from(document.querySelectorAll('input[name="verify"]:checked')).map((input) => input.value);
+      const feedback = document.getElementById("verify-feedback");
+      feedback.classList.remove("hidden");
+
+      if (checked.includes("A")) {
+        feedback.textContent = "❌ 直接相信 AI 並寫進作業可能會出錯。AI 有時會產生看似合理、其實不正確的資訊，因此需要查證。";
+        feedback.className = "rounded-xl border border-rose-300 bg-rose-100 p-4 text-sm font-medium text-rose-900";
+      } else if (checked.length >= 2) {
+        feedback.textContent = "✅ 太棒了！多查閱不同資料、詢問師長並主動修正錯誤，是負責任使用 AI 的好方法。";
+        feedback.className = "rounded-xl border border-emerald-300 bg-emerald-100 p-4 text-sm font-medium text-emerald-900";
+      } else {
+        feedback.textContent = "💡 提示：可選擇多翻書、多比較資料來源、詢問老師家長，或在發現錯誤時主動修正。";
+        feedback.className = "rounded-xl border border-blue-300 bg-blue-100 p-4 text-sm font-medium text-blue-900";
+      }
+    }
+
+    function updateProgress() {
+      const count = document.querySelectorAll(".creative-choice:checked").length;
+      const percent = Math.round((count / 3) * 100);
+      document.getElementById("progress-bar").style.width = percent + "%";
+      document.getElementById("progress-text").textContent = "目前進度：" + percent + "%";
+    }
+
+    function finishWorksheet() {
+      const answersCorrect =
+        document.getElementById("match-1").value === "C" &&
+        document.getElementById("match-2").value === "A" &&
+        document.getElementById("match-3").value === "B";
+
+      if (!answersCorrect) {
+        showModal(
+          "提示：第三關配對尚未完全正確",
+          "請再檢查：\n(1) 個人資料 → C 保護隱私\n(2) 直接複製作文 → A 自己思考完成作業\n(3) 對 AI 說請與謝謝 → B 保持有禮貌的互動",
+          "🔍"
+        );
+        return;
+      }
+
+      const name = document.getElementById("user-name-input").value.trim() ||
+        document.getElementById("signature-input").value.trim() || "小達人";
+      const date = document.getElementById("date-input").value || new Date().toISOString().split("T")[0];
+
+      document.getElementById("cert-name").textContent = name;
+      document.getElementById("cert-date").textContent = "頒發日期：" + date;
+      document.getElementById("success-overlay").classList.remove("hidden");
+      document.getElementById("success-overlay").classList.add("flex");
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("date-input").value = new Date().toISOString().split("T")[0];
+
+      document.getElementById("expert-mode-toggle").addEventListener("change", (event) => {
+        document.querySelectorAll(".expert-card").forEach((card) => card.classList.toggle("hidden", !event.target.checked));
+        if (event.target.checked) {
+          showModal("人權巡檢模式已啟動", "已開啟人權專家觀察點，可以對照每一關背後的人權與倫理核心價值。", "👁️");
+        }
+      });
+
+      document.querySelectorAll("[data-step]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const step = button.dataset.step;
+          const index = currentOrder.indexOf(step);
+          if (index > -1) currentOrder.splice(index, 1);
+          else if (currentOrder.length < 3) currentOrder.push(step);
+          updateOrderCards();
+        });
+      });
+
+      document.getElementById("verify-button").addEventListener("click", checkVerification);
+      document.querySelectorAll(".creative-choice").forEach((input) => input.addEventListener("change", updateProgress));
+      document.getElementById("finish-button").addEventListener("click", finishWorksheet);
+      document.getElementById("modal-close-button").addEventListener("click", closeModal);
+      document.getElementById("certificate-close-button").addEventListener("click", () => {
+        document.getElementById("success-overlay").classList.add("hidden");
+        document.getElementById("success-overlay").classList.remove("flex");
+      });
+
+      lucide.createIcons();
+    });
+  </script>
+ </body>
+</html>
